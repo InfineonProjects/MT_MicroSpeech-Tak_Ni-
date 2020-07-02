@@ -1,0 +1,59 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                &&JSONINCLUDELIST&&
+                "&&CY_TOOL_CHAIN_DIRECTORY&&/include",
+                "&&CY_TOOL_CHAIN_DIRECTORY&&/include/libcxx"
+            ],
+            "browse": {
+                "path": [
+                    &&JSONINCLUDELIST&&
+                    "&&CY_TOOL_CHAIN_DIRECTORY&&/include",
+                    "&&CY_TOOL_CHAIN_DIRECTORY&&/include/libcxx"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "defines": [
+                &&JSONDEFINELIST&&
+                "__GNUC__"
+            ],
+            "intelliSenseMode": "${${default}",
+            "compilerPath": "&&CY_TOOL_CHAIN_DIRECTORY&&/bin/armclang.exe &&CY_C_FLAGS&&",
+            "cStandard": "c99",
+            "cppStandard": "c++11"
+        },
+        {
+            "name": "Linux",
+            "includePath": [
+                &&JSONINCLUDELIST&&
+                "&&CY_TOOL_CHAIN_DIRECTORY&&/include",
+                "&&CY_TOOL_CHAIN_DIRECTORY&&/include/libcxx",
+                "&&CY_TOOL_CHAIN_DIRECTORY&&/include/arm_linux",
+                "&&CY_TOOL_CHAIN_DIRECTORY&&/include/arm_linux_compat"
+            ],
+            "browse": {
+                "path": [
+                    &&JSONINCLUDELIST&&
+                    "&&CY_TOOL_CHAIN_DIRECTORY&&/include",
+                    "&&CY_TOOL_CHAIN_DIRECTORY&&/include/libcxx",
+                    "&&CY_TOOL_CHAIN_DIRECTORY&&/include/arm_linux",
+                    "&&CY_TOOL_CHAIN_DIRECTORY&&/include/arm_linux_compat"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "defines": [
+                &&JSONDEFINELIST&&
+                "__GNUC__"
+            ],
+            "intelliSenseMode": "${default}",
+            "compilerPath": "&&CY_TOOL_CHAIN_DIRECTORY&&/bin/armclang &&CY_C_FLAGS&&",
+            "cStandard": "c99",
+            "cppStandard": "c++11"
+        }
+    ],
+    "version": 4
+}

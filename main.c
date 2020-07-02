@@ -51,7 +51,7 @@
 #include "fft.h"
 #include "error.h"
 
-//#include "main_functions.h"
+#include "main_functions.h"
 //#include "data3.h"
 
 void init(int16_t* data);
